@@ -1,0 +1,15 @@
+
+
+<div [ngClass]="{'k-form-inline':labelInline}">
+
+  <label class="k-form-field"  style="width: 100%;" >
+    <span> {{label}} </span>
+    <textarea  class="k-textarea" id="{{id}}" 
+    name="{{name}}" placeholder="{{placeholder}}" 
+    [style.direction]="direction" 
+    (input)="onChange($event.target.value)" 
+    [(ngModel)]="data"
+      style="width: 100%;" >
+      </textarea>
+  </label>
+</div>

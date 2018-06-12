@@ -1,0 +1,16 @@
+
+<kendo-popup [popupClass]="'content'" 
+ [anchor]="anchor">
+
+  <div *ngIf="control.errors.required">
+    {{name}} را وارد نمایید
+  </div>
+  <div *ngIf="control.errors.minlength">
+    {{name}} باید حداقل {{control.errors.minlength.requiredLength}} حرف داشته باشد
+  </div>
+
+
+  <ng-content></ng-content>
+
+
+</kendo-popup>

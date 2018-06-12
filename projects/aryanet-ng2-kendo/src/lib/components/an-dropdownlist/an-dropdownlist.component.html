@@ -1,0 +1,48 @@
+<!-- <div [ngClass]="{'form-inline':labelInline}" >
+  <div class="form-group " style="width: 100%;">
+    <label for="{{id}}" class="">{{label}}</label>
+
+    <div   [ngClass]="{ 'col':labelInline }">
+      <kendo-dropdownlist [data]="view | async" 
+      [(ngModel)]="selectedId" [valuePrimitive]="true" 
+      [textField]="'text'" [valueField]="'value'"
+        [filterable]="true" 
+        (valueChange)="onValueChange($event)" 
+        id="{{id}}" name="{{name}}" 
+        class="form-control"
+         style="width: 100%;">
+      </kendo-dropdownlist>
+    </div>
+
+  </div>
+
+</div> -->
+
+
+
+
+
+
+<div [ngClass]="{'k-form-inline':labelInline}">
+
+  <label class="k-form-field">
+    <span> {{label}} </span>
+    <kendo-dropdownlist [data]="view | async" 
+    [(ngModel)]="selectedId" 
+    [valuePrimitive]="true" 
+    [textField]="'text'" 
+    [valueField]="'value'"
+    [filterable]="true" 
+    [delay]="300"
+    [popupSettings]="{ height: 500, width: 100 ,animate:true,popupClass:'dddd' }"
+    (valueChange)="onValueChange($event)" 
+    (filterChange)="onFilterChange($event)"
+    id="{{id}}" 
+    name="{{name}}" 
+    class="form-control"
+    style="width: 100%;">
+    </kendo-dropdownlist>
+  </label>
+</div>
+
+

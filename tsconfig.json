@@ -1,0 +1,40 @@
+{
+  "compileOnSave": false,
+  "compilerOptions": {
+    "baseUrl": "./",
+    "outDir": "./dist/out-tsc",
+    "sourceMap": true,
+    "declaration": false,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2017",
+      "dom"
+    ],
+    "paths": {
+      "aryanet-ng2-kendo-control": [
+        "dist/aryanet-ng2-kendo-control"
+      ],
+      "aryanet-ng2-kendo-control/*": [
+        "dist/aryanet-ng2-kendo-control/*"
+      ],
+      "aryanet-ng2-kendo": [
+        "dist/aryanet-ng2-kendo"
+      ],
+      "aryanet-ng2-kendo/*": [
+        "dist/aryanet-ng2-kendo/*"
+      ],
+      "test2": [
+        "dist/test2"
+      ],
+      "test2/*": [
+        "dist/test2/*"
+      ]
+    }
+  }
+}

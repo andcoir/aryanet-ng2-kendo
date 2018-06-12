@@ -1,0 +1,71 @@
+
+
+<div kendoTooltip  [ngClass]="{'k-form-inline':labelInline}" >
+
+  <label class="k-form-field" style="width: 100%;">
+    <span> {{label}} </span>
+
+
+    <!-- <input class="k-textbox" 
+    id="{{id}}" 
+    name="{{name}}" 
+    placeholder="{{placeholder}}" 
+    [style.direction]="direction" 
+    (input)="onChange($event.target.value)" 
+    [(ngModel)]="data" 
+     [minlength]="minlength" 
+     [required]="required" 
+      style="width: 100%;"  
+      /> -->
+
+      <ng-content  > </ng-content>
+
+
+  </label>
+
+
+
+<!-- 
+  <an-k-control-error 
+  *ngIf="control.invalid && (control.dirty || control.touched)" 
+  [anchor]="anchorlastName" 
+  [control]="lastName"   
+  [name]="'نام خانوادگی'">
+  </an-k-control-error> -->
+
+
+
+  <!--
+      #{{id}}="ngModel" 
+     #firstName="ngModel"  
+      #anchor
+      
+      #firstName="ngModel"  
+    
+      [attr.ng-reflect-name]='firstName'
+      #anchor  -->
+
+
+<!--         
+
+      <kendo-popup   
+      [popupClass]="'content'" 
+      [offset]="offset" 
+      [anchor]="anchor" >
+    
+      <div *ngIf="control.errors.required">
+          نام را وارد نمایید 
+           </div>
+           <div *ngIf="control.errors.minlength">
+            نام باید حداقل 3 حرف داشته باشد
+           </div>
+    
+      
+      <ng-content></ng-content>
+    
+    
+    </kendo-popup> -->
+    
+
+
+</div>

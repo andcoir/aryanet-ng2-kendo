@@ -1,0 +1,20 @@
+
+
+<div [ngClass]="{'k-form-inline':labelInline}">
+
+  <label class="k-form-field">
+    <span> {{label}} </span>
+    <kendo-numerictextbox  
+     id="{{id}}" 
+    name="{{name}}"
+    [style.direction]="direction" 
+    (valueChange)="onChange($event)" 
+    [min]="min" 
+    [max]="max"
+    [format]="format"
+    [step]="step"
+    [(ngModel)]="data"
+      style="width: 100%;" >
+      </kendo-numerictextbox>
+  </label>
+</div>

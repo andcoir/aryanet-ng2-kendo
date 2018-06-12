@@ -1,0 +1,42 @@
+
+
+<div [ngClass]="{'form-inline':labelInline}" style="position: relative;">
+
+  <div class="form-group " style="width: 100%;">
+    <label for="{{id}}" class="">{{label}}</label>    
+    
+  <div   [ngClass]="{ 'col':labelInline }">
+    
+    <!-- <div class="input-group">
+
+      <div class=""> -->
+        <dp-date-picker 
+        #datePicker
+        id="{{id}}" 
+        name="eeeee" 
+        placeholder="{{placeholder}}"
+        theme="dp-material"
+        style="width:100%;"
+        [config]="datePickerConfig" 
+        (onChange)="onValueChange($event)"
+        [(ngModel)]="date" 
+        realonly
+        >
+        </dp-date-picker>
+      <!-- </div> -->
+ 
+
+      <!-- <div class=""> -->
+        <span  (click)="open()"  
+           class="rmp-calendarbtn btn btn-sm btn-outline-secondary fa fa-calendar">
+          </span>
+      <!-- </div> -->
+    <!-- </div> -->
+    
+
+
+  </div>
+</div>
+
+</div>
+

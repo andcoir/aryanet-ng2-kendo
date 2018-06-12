@@ -1,0 +1,15 @@
+
+
+
+
+  <label class="k-form-field">
+    <input type="checkbox" id="{{id}}" 
+    class="k-checkbox" 
+    name="{{name}}" 
+    (change)="onChange($event.target.checked)" 
+    [(ngModel)]="data"
+    >
+    <label class="k-checkbox-label" for="{{id}}">{{label}} </label>
+</label>
+
+

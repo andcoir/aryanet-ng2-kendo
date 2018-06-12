@@ -1,0 +1,75 @@
+<!-- <div [ngClass]="{'form-inline':labelInline}" >
+  <div class="form-group " style="width: 100%;">
+    <label for="{{id}}" class="">{{label}}</label>
+
+    <div   [ngClass]="{ 'col':labelInline }">
+      <kendo-multiselect [data]="view | async" 
+      [(ngModel)]="selectedId" [valuePrimitive]="true" 
+      [textField]="'text'" [valueField]="'value'"
+        [filterable]="true" 
+        (valueChange)="onValueChange($event)" 
+        id="{{id}}" name="{{name}}" 
+        class="form-control"
+         style="width: 100%;">
+      </kendo-multiselect>
+    </div>
+
+  </div>
+
+</div> -->
+
+
+
+
+
+<div [ngClass]="{'k-form-inline':labelInline}">
+
+
+
+  <!-- <kendo-multiselect
+  [allowCustom]="true"
+  [data]="view | async"  
+  name="listItems"
+  id="listItems"
+  [valuePrimitive]="true" 
+  [textField]="'text'" 
+  [valueField]="'value'"
+  [valueNormalizer]="valueNormalizer"
+  [(ngModel)]="selectedtems"
+>
+</kendo-multiselect>
+
+
+ -->
+
+
+
+
+
+    <label class="k-form-field">
+      <span> {{label}} </span>
+      
+      <!-- [valuePrimitive]="true"  -->
+      <!-- [data]="view | async"  -->
+      <kendo-multiselect 
+      [data]="listItems"
+      [(ngModel)]="selectedtems" 
+      [textField]="'text'" 
+      [valueField]="'value'"
+      [filterable]="true" 
+      [allowCustom]="allowCustom"
+      [valueNormalizer]="valueNormalizer"
+      (valueChange)="onValueChange($event)" 
+      (filterChange)="onFilterChange($event)"
+      placeholder="{{placeholder}}"
+      id="{{id}}" 
+      name="{{name}}" 
+      class="form-control"
+      style="width: 100%;">
+
+      </kendo-multiselect>
+    </label>
+  </div>
+  
+  
+  
